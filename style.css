@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+    --blue: rgb(110, 156, 182);
+}
+
+.divider {
+    display:flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1 1 0;
+    background-color: var(--blue);
+}
+
+.right { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2 1 0;
+    background-color: rgb(240, 240, 240);
+    /*background-image: linear-gradient(to bottom right, gray , white);*/
+}
+
+/*space right elements 5%*/
+.right > p {
+    margin-left: 5%;
+}
+
+/* inputs */
+.form-inputs {
+    background-color: white;
+    box-shadow: 0 10px 10px -10px gray;
+    padding: 20px 0;
+}
+
+.form-inputs div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    width: 60%;
+    border: 0;
+}
+
+.form-inputs div h1 {
+    width: 100%;
+    font-size: 1.5rem;
+}
+.form-inputs div p {
+    border: 0;
+    padding: 20px 0;
+    flex: 0 1 50%;
+    /*background-color: green;*/
+}
+
+.form button {
+    background-color: var(--blue);
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px -5px gray;
+    font-size: 1rem;
+    padding: 15px 30px 15px;
+    margin: 20px 0 20px 5%;
+    cursor:pointer;
+}
+
+p > legend {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    margin: 0 -2px;
+}
+
+p > input {
+    padding: 5px 0px 5px 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid 1px gray;
+}
+
+p > input:focus {
+    outline: solid 1px var(--blue);
+    box-shadow: 0 8px 5px -5px gray;
+}
+
+p > input:not(:placeholder-shown):invalid {
+    outline: solid 1px red;
+    border: solid 1px red;
+}
+
+.invalid {
+    outline: solid 1px red;
+    border: solid 1px red;
+}
+
+div > p {
+    position: relative;
+}
+
+#error {
+    font-size: 0.9rem;
+    color:crimson;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
