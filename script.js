@@ -4,7 +4,7 @@ error = document.getElementById("error")
 
 function validatePassword() {
     console.log(confirmpassword.value)
-    if (password.value != confirmpassword.value) {
+    if (password.value !== confirmpassword.value) {
         error.textContent = "Password doesn't match";
         confirmpassword.classList.add("invalid");
     } else {

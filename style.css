@@ -9,7 +9,9 @@
 
 .divider {
     display:flex;
+    flex-wrap: true;
     height: 100vh;
+    min-height: 500px;
 }
 
 .left {
